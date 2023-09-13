@@ -1,0 +1,35 @@
+INSTALLATION OF PYTHON
+
+Step 1: Go to the official Website www.python.org.
+
+Step 2: In that website, choose the Downloads Tab.
+
+Step 3: Check for the Latest version of Python.
+
+Step 4: Click on the Download according to your PC specification and OS.
+
+Step 5: After Download, click the installation package.
+
+Step 6: Open the downloaded File and click the Installation Setup.
+
+Step 7: You can choose either Default Installation Setup or You can customize the Setup.
+
+Step 8: Then click the Install Button, it will automatically install the python program on your PC.
+
+Step 9: Complete the Installation by clicking the Finish.
+
+INSTALLATION OF PYCHARM COMMUNITY EDITION:
+
+Step 1: Check the official website ( jetbrains) to download latest version of Pycharm community Edition.
+
+Step 2: Download the Pycharm Community Edition Installation Package.
+
+Step 3: Open the installation package.
+
+Step 4: In that select the download Location and select the Installation Folders.
+
+Step 5: Complete the Installation by clicking the Finish.
+
+Step 6: It asks for Reboot of the PC.
+
+
