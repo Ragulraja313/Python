@@ -1,0 +1,31 @@
+PYTHON:
+
+Python is a general purpose, High Level, Interpreted and Object-oriented Programming Language.
+
+Created - 1980 and Released - 1991.
+
+Created by Guido Van Rossum.
+
+VERSIONS:
+
+Python has Multiple Versions,
+
+1x - 1994
+2x - 2000
+3x - 2008
+Python 2x and 3x are major versions currently used. Python 2x is still running and Python 3x will be Future.
+
+FEATURES OF PYTHON:
+
+Easy to Learn / User friendly.
+Free and Open Source
+Lots of Libraries available.
+
+COMPANIES USING PYTHON:
+
+Google
+Facebook
+Utorrent
+Netflix 
+NASA
+Youtube

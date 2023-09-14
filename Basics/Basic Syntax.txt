@@ -1,0 +1,106 @@
+BASIC SYNTAX:
+
+Python Identifiers
+A Python identifier is a name used to identify a variable, function, class, module or other object. 
+
+Example:
+Variable names
+Function names
+Class Names
+Module names
+Constants
+
+
+Python Keywords
+Reserved words / Keywords are you cannot use them as constant or variable or any other identifier names.
+
+Control Flow
+Function
+Data Type
+Exception Handling
+Import and Module
+Class and Object 
+Others
+If
+Elif
+else
+while
+For
+In
+Break
+Continue
+Def
+Return
+
+
+True 
+False
+
+
+Try
+Except 
+Throw
+
+
+Import
+From
+as
+Class
+def
+None
+And 
+Or
+not
+
+
+Lines and Indentation
+Blocks of code are denoted by line indentation. The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. 
+
+Eg:  
+
+
+
+Multiline statements
+Statements in Python typically end with a new line. We can write multi line statements using several techniques such as
+Backslash
+Parentheses.
+Brackets
+Curly Braces
+
+Quotations in Python
+Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals.
+
+Eg:
+
+word = 'word' 
+
+sentence = "This is a sentence." 
+
+paragraph = """This is a paragraph. It is made up of multiple lines and sentences."""
+
+Comments in Python
+
+A comment is a programmer-readable explanation or annotation in the Python source code. A hash sign (#) that is not inside a string literal begins a comment. All characters after the # and up to the end of the physical line are part of the comment.
+
+Eg:
+
+# First comment 
+print ("Hello, World!") # Second comment
+
+Triple-quoted string is also ignored by Python interpreter and can be used as a multiline comments:
+''' 
+This is a 
+multiline comment. 
+'''
+
+
+
+
+Python User Input:
+Python allows for user input. That means we are able to ask the user for input.   
+Eg:
+
+
+val = input("Enter your value: ")
+print(val)
+

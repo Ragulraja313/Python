@@ -1,0 +1,9 @@
+a = 1  # int data type
+b = 1.5  # float datatype
+c = a + 8j  # complex data type
+d = True  # boolean
+e = False  # boolean
+f = [1, 2, 3, 4]  # List
+g = (1, 2, 3, 4)  # Tuples
+h = {1, 2, 3, 4}  # Set
+i = {"name": "Rahul","empid": 11547}  # Dictionary

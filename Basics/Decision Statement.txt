@@ -1,0 +1,25 @@
+# decision Statement
+
+#if statement
+
+a = 5
+if a == 5:
+   print("True")
+
+# if else statement
+
+a = 5
+if a == 5:
+   print("True")
+else:
+   print("False")
+
+#if elif else statement
+
+a = 5
+if a == 5:
+   print("True")
+elif a > 5:
+   print("More")
+else:
+   print("False")

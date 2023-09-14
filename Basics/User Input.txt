@@ -1,0 +1,4 @@
+number = input("Enter the Number: ")
+print(number)
+
+#getting input from the user and printing the input.
