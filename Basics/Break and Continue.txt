@@ -1,0 +1,43 @@
+# break Statement
+
+# while loop
+
+i = 1
+while i < 10:
+   i += 1
+   if i == 3:
+      break
+   print(i)
+
+# for loop
+
+a = [1,2,3,4,5]
+for i in a:
+   if i == 3:
+      break
+   print(i)
+
+
+# continue statement
+
+# while loop
+
+i = 1
+while i < 10:
+   i += 1
+   if i == 3:
+      continue
+   print(i)
+
+# for loop
+
+a = [1, 2, 3, 4, 5]
+
+for i in a:
+   if i == 3:
+      continue
+   print(i)
+
+
+
+

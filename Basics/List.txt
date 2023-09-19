@@ -1,0 +1,30 @@
+a = [1,2,3,4,5]
+
+#slicing and Indexing
+print(a[2])
+print(a[:3])
+print(a[1:])
+print(a[1:4])
+print(a[0:5:2])
+print(a[-1:])
+print(a[:-1])
+print(a[::-1])
+
+#list methods
+
+a.append(6)
+print(a)
+a.extend([7,8])
+print(a)
+a.insert(4,8)
+print(a)
+a.remove(8)
+print(a)
+a.pop(7)
+print(a)
+a.reverse()
+print(a)
+a.count(4)
+print(a)
+a.sort()
+print(a)

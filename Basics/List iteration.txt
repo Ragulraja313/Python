@@ -1,0 +1,37 @@
+# list
+
+numbers = [111, 222, 333, 444, 555]
+
+
+# printing the length
+
+x = len(numbers)
+print(x)
+
+# printing the type 
+
+x = type(numbers)
+print(x)
+
+# list iteration
+
+# while loop
+
+numbers = [111, 222, 333, 444, 555]
+x = len(numbers)
+
+while i < x:
+    print(i)
+    i += 1
+
+# for loop
+
+numbers = [111, 222, 333, 444, 555]
+x = len(numbers)
+
+for i in range(x):
+    print(i)
+
+
+for i in enumerate(x):
+   print(i)

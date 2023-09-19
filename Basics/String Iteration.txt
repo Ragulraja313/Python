@@ -1,0 +1,36 @@
+# string Iteration
+
+# while loop
+
+a = "Rahul"
+x = len(a)
+
+while i < x:
+    print(i)
+    i += 1
+
+
+# for loop
+
+a = "Rahul"
+x = len(a)
+
+for i in range(x):
+   print(i)
+
+
+# string methods
+
+a = "hello"
+print(a.islower())
+print(a.isupper())
+print(a.isdigit())
+print(a.capitalize())
+print(a.istitle)
+print(a.lower())
+print(a.upper())
+print(a.count("l"))
+print(a.replace("h", "H"))
+print(a.find("l"))
+print(a.rfind("l"))
+
