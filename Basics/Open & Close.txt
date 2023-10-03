@@ -1,0 +1,5 @@
+f = open(CUsersSightSpectrumDesktopNew Text Document.txt, r)
+
+print(f.read())
+
+f.close()
