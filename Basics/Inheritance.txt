@@ -1,0 +1,24 @@
+class Human:
+    Name = ""
+    Age = 0
+
+    def __init__(self, Name, Age):
+        self.name = Name
+        self.age = Age
+
+    def display(self):
+        print(f"My name is {self.name} and age is {self.age}")
+
+
+s = Human("Rahul", 22)
+print(s.name)
+print(s.age)
+s.display()
+
+
+class Employee(Human):
+    pass
+
+
+e = Employee("Sunny", 20)
+e.display()
