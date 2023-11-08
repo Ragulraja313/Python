@@ -1,0 +1,13 @@
+import shutil
+
+src = "C:\\Users\\Sightspectrum\\Desktop\\New Text Document.txt"
+dest = "C:\\Users\\Sightspectrum\\Desktop\\New Text Document(2).txt"
+
+dest = shutil.copy(src,dest)
+
+print(dest)
+
+with open('C:\\Users\\Sightspectrum\\Desktop\\New Text Document(2).txt') as file:
+    a = file.read()
+    print(a)
+
