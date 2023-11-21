@@ -1,0 +1,31 @@
+import mysql.connector
+# Creating a Connection
+connection = mysql.connector.connect(
+    user='root',
+    password='Ragulraja@2002',
+    host='localhost',
+    database='my_database'
+)
+# Create a cursor object
+cursor = connection.cursor()
+
+# SQL Queries
+# Alter table
+cursor.execute("ALTER TABLE data MODIFY Domain VARCHAR(15);")
+
+# Update Table
+cursor.execute("UPDATE data SET Domain = 'Tableau' where  NAME = 'Jambu';")
+
+# Delete Column
+cursor.execute("DELETE from data where AGE = 45;")
+
+
+# Commit the changes to the database
+connection.commit()
+# Close the cursor and connection
+cursor.close()
+connection.close()
+
+
+
+

@@ -1,0 +1,31 @@
+import mysql.connector
+# Creating a Connection
+connection = mysql.connector.connect(
+    user='root',
+    password='Ragulraja@2002',
+    host='localhost',
+    database='my_database'
+)
+# Create a cursor object
+cursor = connection.cursor()
+
+# SQL Queries
+cursor.execute("CREATE TABLE data (NAME VARCHAR(10) NOT NULL, AGE INT(5) NOT NULL, EMPID INT(10) NOT NULL);")
+
+insert_query = "INSERT INTO data (NAME, AGE, EMPID) VALUES (%s,%s,%s)"
+data_to_insert = ('RAHUL', 22, 11547)
+cursor.execute(insert_query, data_to_insert)
+
+cursor.execute("SELECT * FROM data;")
+rows = cursor.fetchall()
+for x in rows:
+    print(x)
+# Commit the changes to the database
+connection.commit()
+# Close the cursor and connection
+cursor.close()
+connection.close()
+
+
+
+
