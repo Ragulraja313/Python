@@ -1,0 +1,15 @@
+a = ['72.5','r', '43', '67', '8', 'ahu', 'l', '5']
+for i in a:
+    if i.isnumeric():
+        continue
+    elif i.isalpha():
+        print(i,end="")
+    else:
+        continue
+import re
+
+a = ['72.5', 'r', '43', '67', '8', 'ahu', 'l', '5']
+
+for i in a:
+    if re.match(r'^[a-zA-Z]+$', i):
+        print(i, end="")

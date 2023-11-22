@@ -1,0 +1,19 @@
+def main():
+    num = int(input())
+
+    if num >= 90:
+        return "A"
+    elif num >= 80:
+        return "B"
+    elif num >= 70:
+        return "c"
+    elif num >= 60:
+        return "D"
+    elif num >= 50:
+        return "E"
+    else:
+        return "F"
+
+
+if __name__ == '__main__':
+    main()
