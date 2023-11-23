@@ -1,0 +1,54 @@
+from sqlalchemy import create_engine, Column, Integer, String, Sequence
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+# Create an SQLite database in memory
+engine = create_engine('sqlite:///:memory:')
+
+# Create a base class for declarative class definitions
+Base = declarative_base()
+
+
+# Define a simple User class that will be mapped to a table
+class User(Base):
+    __tablename__ = 'users'
+
+    id = Column(Integer, Sequence('user_id_seq'), primary_key=True)
+    name = Column(String(50))
+    age = Column(Integer)
+
+
+# Create the table in the database
+Base.metadata.create_all(engine)
+
+# Insert some data
+Session = sessionmaker(bind=engine)
+session = Session()
+
+new_user = User(name='John Doe', age=25)
+session.add(new_user)
+session.commit()
+
+# Query the database
+users = session.query(User).all()
+for user in users:
+    print(f"User {user.id}: {user.name}, Age: {user.age}")
+
+# Update a record
+user_to_update = session.query(User).filter_by(name='John Doe').first()
+user_to_update.age = 26
+session.commit()
+
+# Delete a record
+user_to_delete = session.query(User).filter_by(name='John Doe').first()
+session.delete(user_to_delete)
+session.commit()
+
+# Verify changes
+updated_users = session.query(User).all()
+print("After updates:")
+for user in updated_users:
+    print(f"User {user.id}: {user.name}, Age: {user.age}")
+
+# Close the session
+session.close()
