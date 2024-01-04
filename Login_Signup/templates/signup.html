@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css') }}" type="text/css">
+</head>
+<body>
+<h1>Welcome</h1>
+<form action="/signup" method="POST">
+     <center>
+    <div class="container">
+        <p><label for>Name: </label></p>
+        <input type="text" name="name" id="name">
+        <p><label for>Age: </label></p>
+        <input type="text" name="age" id="age">
+        <p><label for>Email ID: </label></p>
+        <input type="text" name="email" id="email">
+        <p><label for>Domain: </label></p>
+        <input type="text" name="domain" id="domain">
+        <p><label for>Password: </label></p>
+        <input type="text" name="pass" id="pass"><br>
+        <input type="submit" value="Submit" id="button">
+
+    </div>
+     </center>
+</form>
+</body>
+</html>
