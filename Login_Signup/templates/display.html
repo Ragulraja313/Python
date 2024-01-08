@@ -3,14 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Display</title>
+    <style>
+        body {
+            /* font-family: Arial, sans-serif; */
+            background-color: #f4f4f4;
+            margin: 20px;
+            
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #111111;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(232, 250, 69);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-<h3>USER DETAILS</h3>
-{% block content %}
-<p>Users: </p>
-{% for i in post %}
-<p>{{i}}</p>
-{% endfor %}
-{% endblock %}
+    <h3>USER DETAILS</h3>
+    {% block content %}
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email_ID</th>
+            <th>Domain</th>
+            <th>Options</th>
+        </tr>
+        {% for user in post %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+                <td>{{ user[3] }}</td>
+                <td><a href="{{url_for('update')}}"><button>Update</button></a>
+                    <a href="{{url_for('delete')}}"><button>Delete</button></a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    {% endblock %}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <p id="ss" class="animated-message">{{ message }}</p>
+                {% endfor %}
+            </ul>
+        {% endif %}
+{% endwith %}
 </body>
 </html>

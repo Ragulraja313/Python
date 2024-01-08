@@ -28,7 +28,7 @@ def login():
         if data:
             session["name"] = data[0]
             session["password"] = data[1]
-            return redirect('display')
+            return redirect('/display')
         else:
             flash("Username and Password Mismatch", "danger")
     return render_template('login.html')
@@ -54,9 +54,44 @@ def signup():
 def display():
     conn = db_connection()
     cur = conn.cursor()
-    post = cur.execute("select Name from data").fetchall()
+    post = cur.execute("select * from data").fetchall()
     conn.commit()
     return render_template('display.html', post=post)
+
+
+@app.route('/update', methods=['POST', 'GET'])
+def update():
+    if request.method == 'POST':
+        n = request.form.get('name')
+        a = request.form.get('age')
+        e = request.form.get('email')
+        d = request.form.get('domain')
+        p = request.form.get('pass')
+
+        conn = db_connection()
+        cur = conn.cursor()
+        cur.execute("UPDATE data SET Name=?, Age=?, Email_ID=?, Domain=?, Password=? WHERE Name=?",
+                    (n, a, e, d, p, n))
+        conn.commit()
+        return redirect('/display')
+    return render_template('update.html')
+
+
+@app.route('/delete', methods=['GET', 'POST'])
+def delete():
+    if request.method == 'POST':
+        n = request.form['name']
+        if request.form.get('confirm') == 'yes':
+            conn = db_connection()
+            cur = conn.cursor()
+            cur.execute("DELETE FROM data WHERE Name=?", (n,))
+            conn.commit()
+            flash(f"User {n} deleted successfully.", "success")
+        else:
+            flash("Deletion canceled.", "info")
+
+        return redirect('/display')
+    return render_template('delete.html')
 
 
 if __name__ == '__main__':

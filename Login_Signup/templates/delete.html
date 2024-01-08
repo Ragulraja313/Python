@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Delete</title>
+    <link rel="stylesheet" href="C:/Users/Sightspectrum/PycharmProjects/Flask/static/css/delete.css">
+</head>
+<body>
+    <h1>Confirm Deletion</h1>
+    <div class="container">
+    <p>Are you sure you want to delete the user?</p>
+    <form action="/delete" method="POST">
+        <label>Name: </label>
+        <input type="text" name="name">
+        <button type="submit" name="confirm" value="yes">Yes</button>
+    </form>
+    </div>
+</body>
+</html>

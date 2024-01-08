@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1{
+    padding: 80px 0 50px 0;
+}
+.container{
+    padding: 15px;
+    margin: 20px 300px 50px 510px;
+    background-color: white;
+    width: 300px;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.container p {
+    padding:10px;
+    color:crimson;
+}
+button {
+    background-color: black;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button:hover {
+    box-shadow: 0 8px 10px rgb(0, 0, 0, 0.24);
+    border-color: aqua;
+    display: inline;
+    transition-duration: 0.5s;
+    padding: 5px;
+    cursor: pointer;
+}
