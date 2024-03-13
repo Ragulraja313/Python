@@ -1,0 +1,21 @@
+const PI = 3.14;
+console.log(PI); // Output: 3.14
+
+// Trying to reassign a value to a const variable will result in an error
+// PI = 3.14159; // This will cause an error
+
+// Constants must be initialized when declared
+// const myConst; // This will cause an error
+
+// Constants can hold any data type
+const name = "John";
+const age = 30;
+const isStudent = false;
+
+// Constants can also hold objects and arrays
+const person = {
+    name: "Alice",
+    age: 25
+};
+
+const numbers = [1, 2, 3, 4, 5];

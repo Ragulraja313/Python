@@ -1,0 +1,5 @@
+// Method Chaining
+
+let str2 = "   Hello, world!   ";
+str2 = str2.trim().toUpperCase();
+console.log(str2);

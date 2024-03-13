@@ -1,0 +1,31 @@
+const str = "Hello, world!";
+console.log(str.length); // Output: 13
+
+const str = "Hello, World!";
+console.log(str.toUpperCase()); // Output: "HELLO, WORLD!"
+console.log(str.toLowerCase()); // Output: "hello, world!"
+
+const str = "Hello";
+console.log(str.charAt(0)); // Output: "H"
+console.log(str.charAt(1)); // Output: "e"
+
+const str = "Hello, world!";
+console.log(str.indexOf("o")); // Output: 4
+console.log(str.lastIndexOf("o")); // Output: 7
+
+const str = "Hello, world!";
+console.log(str.slice(0, 5)); // Output: "Hello"
+console.log(str.slice(7)); // Output: "world!"
+
+const str = "Hello, world!";
+console.log(str.substring(0, 5)); // Output: "Hello"
+console.log(str.substring(7)); // Output: "world!"
+
+const str = "Hello, world!";
+console.log(str.replace("world", "universe")); // Output: "Hello, universe!"
+
+const str = "Hello, world!";
+console.log(str.split(", ")); // Output: ["Hello", "world!"]
+
+const str = "   Hello, world!   ";
+console.log(str.trim()); // Output: "Hello, world!"

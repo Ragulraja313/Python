@@ -1,0 +1,26 @@
+// Datatypes
+
+// Primitive Data Types
+
+let num = 10;
+let floatNum = 3.14; // number
+
+let str = "Hello"; //string
+
+let isTrue = true;
+let isFalse = false; //boolean
+
+let x;
+console.log(x); // undefined
+
+let y = null; // null
+
+const mySymbol = Symbol(); //symbol
+
+// Composite Data Type
+
+let person = {
+    name: "John",
+    age: 30,
+    isStudent: false
+};                      // object

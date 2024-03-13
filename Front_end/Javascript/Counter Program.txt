@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter Program</title>
+<style>
+    button {
+        padding: 10px 20px; 
+        font-size: 18px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<h1>Counter Program</h1>
+
+<p>Click the button to increase the counter:</p>
+
+<p>Counter: <span id="counter">0</span></p>
+
+<button id="incrementButton">Increment</button>
+
+<script>
+    // Get the counter element
+    const counterElement = document.getElementById('counter');
+
+    // Get the increment button element
+    const incrementButton = document.getElementById('incrementButton');
+
+    // Initialize counter variable
+    let counter = 0;
+
+    // Function to update the counter display
+    function updateCounter() {
+        counterElement.textContent = counter;
+    }
+
+    // Add event listener to the increment button
+    incrementButton.addEventListener('click', function() {
+        counter++; // Increment the counter
+        updateCounter(); // Update the counter display
+    });
+
+    // Initial update of the counter display
+    updateCounter();
+</script>
+
+</body>
+</html>

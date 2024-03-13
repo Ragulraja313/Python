@@ -1,0 +1,34 @@
+body{
+  box-sizing: border-box;
+}
+header{
+  text-align: center;
+  padding: 20px;
+  background-color: beige;
+}
+nav{
+  padding: 15px;
+  background-color: black;
+}
+aside{
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+section{
+  width: 35%;
+  float: left;
+  padding: 10px;
+}
+article{
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+footer{
+  background-color: rgb(148, 146, 143);
+  padding: 10px;
+  display: block;
+  text-align: center;
+  clear: both;
+}

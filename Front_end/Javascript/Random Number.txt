@@ -1,0 +1,9 @@
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
+}
+
+// Example usage: Generate a random number between 1 and 10
+let randomNumber = getRandomInt(1, 10);
+console.log("Random number between 1 and 10:", randomNumber);

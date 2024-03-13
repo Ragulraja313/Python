@@ -1,0 +1,19 @@
+function calculateHypotenuse(a, b) {
+    // Calculate the square of the lengths of the two sides
+    let squareOfA = a * a;
+    let squareOfB = b * b;
+
+    // Calculate the square root of the sum of the squares of the lengths of the two sides
+    let sumOfSquares = squareOfA + squareOfB;
+    let hypotenuse = Math.sqrt(sumOfSquares);
+
+    return hypotenuse;
+}
+
+// Example usage
+let side1 = 3;
+let side2 = 4;
+let hypotenuse = calculateHypotenuse(side1, side2);
+
+console.log("For a right triangle with side lengths of " + side1 + " and " + side2 + ":");
+console.log("The length of the hypotenuse is: " + hypotenuse);

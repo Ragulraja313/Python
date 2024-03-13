@@ -1,0 +1,36 @@
+// Implicit Conversion
+
+let x = 10; // number
+let y = "5"; // string
+
+let result = x + y; // JavaScript coerces y into a number and performs addition
+console.log(result); // Output: 105 (a string)
+
+// Explicit Conversion
+
+// String Conversion
+let num = 10;
+let str = String(num); // Using String() function
+console.log(str); // Output: "10"
+
+let bool = true;
+let strBool = bool.toString(); // Using toString() method
+console.log(strBool); // Output: "true"
+
+// Numeric Conversion
+let strNum = "25";
+let num1 = Number(strNum); // Using Number() function
+console.log(num1); // Output: 25
+
+let strFloat = "3.14";
+let floatNum = +strFloat; // Using unary plus operator
+console.log(floatNum); // Output: 3.14
+
+// Boolean Conversion
+let zero = 0;
+let boolZero = Boolean(zero); // Using Boolean() function
+console.log(boolZero); // Output: false
+
+let nonEmptyString = "Hello";
+let boolString = Boolean(nonEmptyString);
+console.log(boolString); // Output: true

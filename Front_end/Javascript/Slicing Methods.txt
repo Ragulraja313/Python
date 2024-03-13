@@ -1,0 +1,25 @@
+// Using Slice()
+
+const str = "Hello, world!";
+// Extract characters from index 0 to index 5 (excluding index 5)
+console.log(str.slice(0, 5)); 
+// Extract characters from index 7 to the end of the string
+console.log(str.slice(7)); 
+
+// Using Bracket Notation[]
+
+const str1 = "Hello, world!";
+// Extract individual characters
+console.log(str1[0]); 
+console.log(str1[7]); 
+// Extract a substring using bracket notation
+console.log(str1[0] + str1[1] + str1[2] + str1[3] + str1[4]); 
+console.log(str1[7] + str1[8] + str1[9] + str1[10] + str1[11] + str1[12]); 
+
+// Using Negatvie Indices
+
+const str3 = "Hello, world!";
+// Extract the last 6 characters of the string
+console.log(str3.slice(-6)); // 
+// Extract characters from index -5 to index -1 (excluding index -1)
+console.log(str3.slice(-5, -1)); 
