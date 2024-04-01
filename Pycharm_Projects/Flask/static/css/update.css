@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f4f4f4;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+label {
+    color: black;
+    text-align: center;
+}
+
+p {
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 160px;
+    color: red;
+}
+.container1 {
+    padding-left: 390px;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button:hover {
+    box-shadow: 0 8px 10px rgb(0, 0, 0, 0.24);
+    border-color: aqua;
+    display: inline;
+    transition-duration: 0.5s;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

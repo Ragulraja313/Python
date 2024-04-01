@@ -1,0 +1,50 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#container1{
+    text-align: center;
+    padding: 100px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(../images/contact.jpg);
+    background-repeat: repeat;
+}
+#container1 h1{
+    color: white;
+    border: 10px solid white;
+    padding: 15px;
+    font-size: 40px;
+}
+#container2 img{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    margin-top: 10px;
+}
+#container2 form{
+    width: 100%;
+    padding: 50px;
+    margin-top: 10px;
+}
+#container2 input{
+    border: 1px solid black;
+    
+}
+#container2 textarea{
+    border: 1px solid black;
+}
+
+#container2 input:hover,textarea:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+#container3{
+    text-align: center;
+    padding: 100px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(../images/contact.jpg);
+    background-repeat: repeat;
+}
+#container3 h3{
+    color: white;
+    padding: 15px;
+    font-size: 40px;
+    text-shadow: 0 0 4px white;
+}

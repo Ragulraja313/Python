@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>List of My Models</h1>
+    <ul>
+        {% for my_model in my_model_list %}
+            <li>{{ my_model.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

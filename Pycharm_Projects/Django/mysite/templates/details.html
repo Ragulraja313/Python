@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ my_object.name }} Details</title>
+</head>
+<body>
+    <h1>{{ my_object.name }} Details</h1>
+    <p>{{ my_object.description }}</p>
+
+    <a href="{% url 'firstapp.detail' my_object.pk %}">Go to Detail Page</a>
+</body>
+</html>
