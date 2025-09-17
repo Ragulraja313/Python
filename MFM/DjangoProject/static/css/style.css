@@ -1,0 +1,116 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Card container */
+.form-container {
+    background: #ffffff;
+    padding: 40px 35px;
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Inputs & selects */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #6c63ff;
+    background: #fff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(108, 99, 255, 0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #574fd6;
+}
+
+/* Extra link */
+.extra-link {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #6c63ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.extra-link:hover {
+    color: #453bb3;
+    text-decoration: underline;
+}
+
+/* Welcome card */
+.welcome-box {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* --- Existing styles remain --- */
+
+/* Welcome box for index page */
+.welcome-box {
+    background: #fafafa;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 15px 0 25px 0;
+    text-align: left;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+    box-shadow: inset 0px 2px 6px rgba(0,0,0,0.05);
+}
+.btn{
+    color: #eeeeee;
+    text-decoration: none;
+    text-size-adjust: auto;
+    font-size: large;
+}

@@ -1,0 +1,31 @@
+{% extends "register.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% if messages %}
+    <script>
+        {% for message in messages %}
+            alert("{{ message|escapejs }}");
+        {% endfor %}
+    </script>
+    {% endif %}
+
+    {% block content %}
+    <div class="form-container">
+        <h2>Welcome, {{ user.name }}</h2>
+         <div class="welcome-box">
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Phone:</strong> {{ user.phone }}</p>
+         </div>
+
+{#        <button onclick="window.location.href='/dashboard'">Go to Product Dashboard</button>#}
+        <button><a href="{% url 'login' %}" class="btn" >Logout</a></button>
+    </div>
+    {% endblock %}
+</body>
+</html>
